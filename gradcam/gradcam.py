@@ -9,7 +9,7 @@ import numpy as np
 import argparse
 
 class FeatureExtractor():
-    """ Class for extracting activations and 
+    """ Class for extracting activations and
     registering gradients from targetted intermediate layers """
     def __init__(self, model, target_layers):
         self.model = model
@@ -80,7 +80,7 @@ class GradCam:
 		self.extractor = ModelOutputs(self.model, target_layer_names)
 
 	def forward(self, input):
-		return self.model(input) 
+		return self.model(input)
 
 	def __call__(self, input, index = None):
 		if self.cuda:
@@ -205,7 +205,7 @@ if __name__ == '__main__':
 
 	args = get_args()
 
-	# Can work with any model, but it assumes that the model has a 
+	# Can work with any model, but it assumes that the model has a
 	# feature method, and a classifier method,
 	# as in the VGG models in torchvision.
 	grad_cam = GradCam(model = models.vgg19(pretrained=True), \
