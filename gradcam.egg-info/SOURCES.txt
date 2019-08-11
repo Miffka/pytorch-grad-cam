@@ -1,8 +1,0 @@
-README.md
-setup.py
-gradcam/__init__.py
-gradcam/grad-cam.py
-gradcam.egg-info/PKG-INFO
-gradcam.egg-info/SOURCES.txt
-gradcam.egg-info/dependency_links.txt
-gradcam.egg-info/top_level.txt
